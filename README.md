@@ -27,4 +27,4 @@ This video series is created and maintained by Avinash Ketkar(https://github.com
 
 ---
 
-*Note: Replace placeholders like "yourusername", "Your Name", "yourchannel", etc., with appropriate values.*
+
