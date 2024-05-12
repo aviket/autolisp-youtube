@@ -1,4 +1,4 @@
-## Hands on practice video 2
+## Hands on practice video 1
 
 This AutoLISP function, named `FEATURESELECT`, performs the following tasks in an AutoCAD environment:
 
