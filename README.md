@@ -1,4 +1,4 @@
-## Hands on practice video 2
+## Hands on practice video 3
 
 This AutoLISP code performs the following actions in AutoCAD:
 
