@@ -8,7 +8,7 @@ In this video series, we dive into the world of AutoLISP programming language, e
 
 ## Branches
 
-- **[Video 1: AutoLisp Handson1](https://github.com/yourusername/autolisp-video-series/tree/video-1)**
+- **[Video 1: AutoLisp Handson1](https://github.com/aviket/autolisp-youtube/tree/handson-1)**
   - Introduction to AutoLISP
   - Setting up the AutoCAD environment for programming
   - Writing your first AutoLISP program
