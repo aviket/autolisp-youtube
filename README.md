@@ -12,6 +12,9 @@ In this video series, we dive into the world of AutoLISP programming language, e
   - Introduction to AutoLISP
   - Setting up the AutoCAD environment for programming
   - Writing your first AutoLISP program
+
+ - **[Video 2: AutoLisp Handson2](https://github.com/aviket/autolisp-youtube/tree/handson-2)**
+  - Code described in the first video is further improvised and facility of counting point features is added.
   
 ## Contributing
 
