@@ -1,6 +1,7 @@
 ## Hands on practice video 2
 
 This AutoLISP function, named `FEATURESELECT`, performs the following tasks in an AutoCAD environment:
+In this code , facility provided in the first version is further improved , and point features are included in the count
 
 1. **User Selection:** Prompts the user to select a set of features within the AutoCAD drawing.
 2. **Feature Identification:** Iterates through the selected features, identifying and counting each type of feature:
