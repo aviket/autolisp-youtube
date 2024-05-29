@@ -1,33 +1,25 @@
-# AutoLISP Video Series
+## Hands on practice video 3
 
-Welcome to the repository for the AutoLISP video series! This repository contains the source code and related materials for each video in the series. Each video corresponds to a separate branch in this repository.
+This AutoLISP code performs the following actions in AutoCAD:
 
-## Video Series Overview
+1. **Retrieves Polyline Vertices:**
+   - `(vl-load-com)`: Loads functions for accessing AutoCAD object data.
+   - `(entsel "\nSelect a polyline: ")`: Prompts the user to select a polyline in the drawing.
+   - if block after this , handles the situation of user not selecting any polyline
+    - `(entget (car ply))`: Retrieves the polyline's entity data, which includes vertex coordinates.
+   - `(vl-remove-if-not ...)`: Filters the entity data to keep only the vertex coordinates (group code 10).
+   - `(mapcar 'cdr vertices)`: Extracts the coordinates from the filtered vertex data, creating a list of points.
 
-In this video series, we dive into the world of AutoLISP programming language, exploring its features, functionalities, and practical applications. Whether you're a beginner looking to learn the basics or an experienced programmer seeking advanced techniques, this series has something for everyone interested in AutoLISP.
+3. **Selects Objects at Vertices:**
+   - `(setq vlist (c:getvertices))`: Calls the `c:getvertices` function to get the polyline vertices.
+   - `(setq entities (ssget "f" vlist))`: Selects objects in the drawing that are within a small fuzzy window around each vertex point.
 
-## Branches
+4. **Changes Object Color:**
+   - `(command "chprop" entities "" "C" "1" "")`: Changes the color of the selected objects to red (color index 1).
 
-- **[Video 1: AutoLisp Handson1](https://github.com/aviket/autolisp-youtube/tree/handson-1)**
-  - Introduction to AutoLISP
-  - Setting up the AutoCAD environment for programming
-  - Writing your first AutoLISP program
+**In summary:**
 
- - **[Video 2: AutoLisp Handson2](https://github.com/aviket/autolisp-youtube/tree/handson-2)**
-  - Code described in the first video is further improvised and facility of counting point features is added.
-  
-## Contributing
+The code allows the user to select a polyline, then automatically identifies all the vertices of that polyline. It then selects any objects located totally inside the polyline boundary and changes their color to red. This can be useful for highlighting points of interest on a polyline or for visually identifying objects that are connected to the polyline's vertices.
 
-If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request. Contributions from the community are highly appreciated!
-
-## License
-
-This project is licensed under the MIT License 
-
-## About the Author
-
-This video series is created and maintained by Avinash Ketkar(https://github.com/yourusername). Follow me on [YouTube](https://www.youtube.com/yourchannel) for more tutorials and updates!
-
----
-
+**Note:** The commented-out lines suggest alternative selection methods (window or crossing polygon) that you could use instead of the fuzzy window selection.
 
