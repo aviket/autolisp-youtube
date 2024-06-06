@@ -1,4 +1,4 @@
-## Hands on practice video 4
+## Hands on practice video 5
 
 This AutoLISP code performs the following actions in AutoCAD:
 
@@ -6,6 +6,7 @@ This AutoLISP code performs the following actions in AutoCAD:
    - `(vl-load-com)`: Loads functions for accessing AutoCAD object data.
    - `(entsel "\nSelect a polyline: ")`: Prompts the user to select a polyline in the drawing.
    - if block after this , handles the situation of user not selecting any polyline
+   - if block after this , handles the situation of user selecting some entity other than lwpolyline
     - `(entget (car ply))`: Retrieves the polyline's entity data, which includes vertex coordinates.
    - `(vl-remove-if-not ...)`: Filters the entity data to keep only the vertex coordinates (group code 10).
    - `(mapcar 'cdr vertices)`: Extracts the coordinates from the filtered vertex data, creating a list of points.
