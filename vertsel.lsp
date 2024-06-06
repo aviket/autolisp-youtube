@@ -11,6 +11,14 @@
   
   
   )
+
+   (if (not (eq (cdr (assoc 0 (entget (car ply)))) "LWPOLYLINE")) 
+         (progn
+                (princ "\nInvalid selection. \nPlease select a polyline.")
+                (vl-exit-with-value -1)
+         )
+  )  
+
   (setq pdata (entget (car ply))) ; Retrieve polyline data
 
   ; Filter vertex data (represented by group code 10)
