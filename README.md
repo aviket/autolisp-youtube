@@ -5,3 +5,4 @@ Welcome to the repository for the AutoLISP video series! This repository contain
 ## This video explains , a basic procedure of inserting an image in AutoCAD drawing, and tracing entities over the image.
 
 The image used is included as a file in this branch. Image is created using Microsoft CoPilot designer.
+You should use this image , and draw entities over the image. The drawing created thus , will be used in further videos.
