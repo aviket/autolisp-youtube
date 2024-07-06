@@ -1,4 +1,4 @@
-## Hands on practice video 5
+## Hands on practice video 6
 
 This AutoLISP code performs the following actions in AutoCAD:
 
@@ -13,10 +13,7 @@ This AutoLISP code performs the following actions in AutoCAD:
 
 3. **Selects Objects at Vertices:**
    - `(setq vlist (c:getvertices))`: Calls the `c:getvertices` function to get the polyline vertices.
-   - `(setq entities (ssget "f" vlist))`: Selects objects in the drawing that are within a small fuzzy window around each vertex point.
 
-4. **Changes Object Color:**
-   - `(command "chprop" entities "" "C" "1" "")`: Changes the color of the selected objects to red (color index 1).
 
 **In summary:**
 
